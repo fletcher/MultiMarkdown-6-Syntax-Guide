@@ -1,0 +1,14 @@
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>

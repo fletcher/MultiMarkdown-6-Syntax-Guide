@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>MultiMarkdown v6 Syntax Guide</title>
+<meta name = "viewport" content = "width = device-width"/> <meta name = "viewport" content = "initial-scale = 1.0"/> <link rel="stylesheet" type="text/css" media="screen" href="css/markdown-reference.css" /> <script type="text/javascript" src="javascripts/jquery-1.4.2.min.js"></script> <script type="text/javascript" src="javascripts/guide.js"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+
+<h1 id="title">MultiMarkdown v6 Syntax Guide  </h1>
+
+<h2 class="section-name">text</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>This text is **bold**.</code></pre> </td>
+<td> <p>This text is <strong>bold</strong>.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>This text is also __bold__.</code></pre> </td>
+<td> <p>This text is also <strong>bold</strong>.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>This text is *italicized*.</code></pre> </td>
+<td> <p>This text is <em>italicized</em>.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>This itext is also _italicized_.</code></pre> </td>
+<td> <p>This itext is also <em>italicized</em>.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>`This is some code.`</code></pre> </td>
+<td> <p><code>This is some code.</code></p> </td>
+</tr>
+<tr>
+<td> <pre><code>	This is a longer
+	section of code
+	on multiple lines.</code></pre> </td>
+<td> <pre><code>This is a longer
+section of code
+on multiple lines.</code></pre> </td>
+</tr>
+<tr>
+<td> <pre><code>m^2</code></pre> </td>
+<td> <p>m<sup>2</sup></p> </td>
+</tr>
+<tr>
+<td> <pre><code>x^2,y^</code></pre> </td>
+<td> <p>x<sup>2,y</sup></p> </td>
+</tr>
+<tr>
+<td> <pre><code>x~z</code></pre> </td>
+<td> <p>x<sub>z</sub></p> </td>
+</tr>
+<tr>
+<td> <pre><code>C~6~H~12~O~6</code></pre> </td>
+<td> <p>C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></p> </td>
+</tr>
+<tr>
+<td> <pre><code>Escaped characters -- \&</code></pre> </td>
+<td> <p>Escaped characters &#8211; &amp;</p> </td>
+</tr>
+<tr>
+<td> <pre><code>"smart quotes"</code></pre> </td>
+<td> <p>&#8220;smart quotes&#8221;</p> </td>
+</tr>
+<tr>
+<td> <pre><code>'smart quotes'</code></pre> </td>
+<td> <p>&#8216;smart quotes&#8217;</p> </td>
+</tr>
+<tr>
+<td> <pre><code>apostrophe's</code></pre> </td>
+<td> <p>apostrophe&#8217;s</p> </td>
+</tr>
+<tr>
+<td> <pre><code>en -- dash</code></pre> </td>
+<td> <p>en &#8211; dash</p> </td>
+</tr>
+<tr>
+<td> <pre><code>em --- dash</code></pre> </td>
+<td> <p>em &#8212; dash</p> </td>
+</tr>
+<tr>
+<td> <pre><code>ellipsis ...</code></pre> </td>
+<td> <p>ellipsis &#8230;</p> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">abbreviations</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>HTML and HTML
+
+[>HTML]: Hypertext Markup Language</code></pre> </td>
+<td> <p>Hypertext Markup Language (<abbr title="Hypertext Markup Language">HTML</abbr>) and <abbr title="Hypertext Markup Language">HTML</abbr></p> </td>
+</tr>
+<tr>
+<td> <pre><code>[>(HTML) Hypertext Markup Language] and HTML</code></pre> </td>
+<td> <p>Hypertext Markup Language (<abbr title="Hypertext Markup Language">HTML</abbr>) and HTML</p> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">blockquotes</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>Regular text.
+
+> Blockquote
+> with two lines.
+And one more line.
+>> And a second level blockquote.</code></pre> </td>
+<td> <p>Regular text.</p>
+
+<blockquote>
+<p>Blockquote
+with two lines.
+And one more line.</p>
+
+<blockquote>
+<p>And a second level blockquote.</p>
+</blockquote>
+</blockquote> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">citations</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>Cite a source.[p. 42][#source]
+
+[#source]: John Doe. *A Totally Fake Book*. Vanity Press, 2006.</code></pre> </td>
+<td> <p>Cite a source.<a href="#cn:1" id="cnref:1" title="see citation" class="citation">(p. 42, 1)</a></p>
+
+<div class="citations">
+<hr />
+<ol>
+
+<li id="cn:1">
+<p>John Doe. <em>A Totally Fake Book</em>. Vanity Press, 2006. <a href="#cnref:1" title="return to body" class="reversecitation">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div> </td>
+</tr>
+<tr>
+<td> <pre><code>Cite a source.[p. 42][#John Doe. *A Totally Fake Book*. Vanity Press, 2006.]
+
+</code></pre> </td>
+<td> <p>Cite a source.<a href="#cn:1" id="cnref:1" title="see citation" class="citation">(p. 42, 1)</a></p>
+
+<div class="citations">
+<hr />
+<ol>
+
+<li id="cn:1">
+<p>John Doe. <em>A Totally Fake Book</em>. Vanity Press, 2006. <a href="#cnref:1" title="return to body" class="reversecitation">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">criticmarkup</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>This {++is ++}a test.</code></pre> </td>
+<td> <p>This <ins>is </ins>a test.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>This is {--is --}a test.</code></pre> </td>
+<td> <p>This is <del>is </del>a test.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>This {~~isn't~>is~~} a test.</code></pre> </td>
+<td> <p>This <del>isn&#8217;t</del><ins>is</ins> a test.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>This is a {==test==}.</code></pre> </td>
+<td> <p>This is a <mark>test</mark>.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>This is a test.{>>What is it a test of?<<}</code></pre> </td>
+<td> <p>This is a test.<span class="critic comment">What is it a test of?</span></p> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">cross references</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code># Intro #
+
+# Conclusion [fin] #
+
+Link to [Intro].
+
+Link to the [end][fin].</code></pre> </td>
+<td> <h1 id="intro">Intro </h1>
+
+<h1 id="fin">Conclusion  </h1>
+
+<p>Link to <a href="#intro">Intro</a>.</p>
+
+<p>Link to the <a href="#fin">end</a>.</p> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">definition lists</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>Apple
+:   Pomaceous fruit of plants of the genus Malus in 
+    the family Rosaceae.
+
+    Also the makers of really great products.
+</code></pre> </td>
+<td> <dl>
+<dt>Apple</dt>
+<dd><p>Pomaceous fruit of plants of the genus Malus in
+the family Rosaceae.</p>
+
+<p>Also the makers of really great products.</p></dd>
+</dl>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">fenced code blocks</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>```
+This is a fenced
+code block.
+```
+</code></pre> </td>
+<td> <pre><code>This is a fenced
+code block.
+</code></pre> </td>
+</tr>
+<tr>
+<td> <pre><code>```perl
+# Demonstrate Syntax Highlighting if you link to highlight.js #
+# http://softwaremaniacs.org/soft/highlight/en/
+print "Hello, world!\n";
+$a = 0;
+while ($a < 10) {
+print "$a...\n";
+$a++;
+}
+```
+</code></pre> </td>
+<td> <pre><code class="perl">#Demonstrate Syntax Highlighting if you link to highlight.js #
+#http://softwaremaniacs.org/soft/highlight/en/
+print &quot;Hello, world!\n&quot;;
+$a = 0;
+while ($a &lt; 10) {
+print &quot;$a...\n&quot;;
+$a++;
+}
+</code></pre> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">footnotes</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>Text.[^foot]
+
+[^foot]: This is a footnote.</code></pre> </td>
+<td> <p>Text.<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote"><sup>1</sup></a></p>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p>This is a footnote. <a href="#fnref:1" title="return to body" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div> </td>
+</tr>
+<tr>
+<td> <pre><code>Text.[^This is an inline footnote.]</code></pre> </td>
+<td> <p>Text.<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote"><sup>1</sup></a></p>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p>This is an inline footnote. <a href="#fnref:1" title="return to body" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">glossary</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>[?Glossary] is a glossary term.
+
+[?Glossary]: The glossary collects information about
+important terms used in your documemnt.</code></pre> </td>
+<td> <p><a href="#gn:1" id="gnref:1" title="see glossary" class="glossary">Glossary</a> is a glossary term.</p>
+
+<div class="glossary">
+<hr />
+<ol>
+
+<li id="gn:1">
+Glossary: <p>The glossary collects information about
+important terms used in your documemnt. <a href="#gnref:1" title="return to body" class="reverseglossary">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div> </td>
+</tr>
+<tr>
+<td> <pre><code>[?(Glossary) The glossary collects information
+about important terms used in your documemnt]
+is a glossary term.</code></pre> </td>
+<td> <p><a href="#gn:1" id="gnref:1" title="see glossary" class="glossary">Glossary</a>
+is a glossary term.</p>
+
+<div class="glossary">
+<hr />
+<ol>
+
+<li id="gn:1">
+Glossary: <p>The glossary collects information
+about important terms used in your documemnt <a href="#gnref:1" title="return to body" class="reverseglossary">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">headings</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code># H1 Header
+</code></pre> </td>
+<td> <h1 id="h1header">H1 Header</h1> </td>
+</tr>
+<tr>
+<td> <pre><code>## H2 Header ##
+</code></pre> </td>
+<td> <h2 id="h2header">H2 Header </h2> </td>
+</tr>
+<tr>
+<td> <pre><code># Header with custom id [custom]
+</code></pre> </td>
+<td> <h1 id="custom">Header with custom id </h1> </td>
+</tr>
+<tr>
+<td> <pre><code>H1 Header
+=========</code></pre> </td>
+<td> <h1 id="h1header">H1 Header</h1> </td>
+</tr>
+<tr>
+<td> <pre><code>H2 Header
+---------</code></pre> </td>
+<td> <h2 id="h2header">H2 Header</h2> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">horizontal rules</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>---</code></pre> </td>
+<td> <hr /> </td>
+</tr>
+<tr>
+<td> <pre><code>- - - </code></pre> </td>
+<td> <hr /> </td>
+</tr>
+<tr>
+<td> <pre><code>****</code></pre> </td>
+<td> <hr />
+ </td>
+</tr>
+<tr>
+<td> <pre><code>* * * * * * </code></pre> </td>
+<td> <hr />
+ </td>
+</tr>
+<tr>
+<td> <pre><code>______</code></pre> </td>
+<td> <hr />
+ </td>
+</tr>
+<tr>
+<td> <pre><code>_ _ _ _ </code></pre> </td>
+<td> <hr />
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">html blocks</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>&lt;div>*bar*&lt;/div></code></pre> </td>
+<td> <div>*bar*</div> </td>
+</tr>
+<tr>
+<td> <pre><code>&lt;div>
+*bar*
+&lt;/div></code></pre> </td>
+<td> <div>
+*bar*
+</div> </td>
+</tr>
+<tr>
+<td> <pre><code>foo
+&lt;div>
+*bar*
+&lt;/div></code></pre> </td>
+<td> <p>foo</p>
+
+<div>
+*bar*
+</div> </td>
+</tr>
+<tr>
+<td> <pre><code>&lt;div>
+*bar*
+
+&lt;/div></code></pre> </td>
+<td> <div>
+*bar*
+
+</div> </td>
+</tr>
+<tr>
+<td> <pre><code>&lt;div>
+
+*bar*
+
+&lt;/div></code></pre> </td>
+<td> <div>
+
+<p><em>bar</em></p>
+
+</div> </td>
+</tr>
+<tr>
+<td> <pre><code>&lt;del>*bar*&lt;/del></code></pre> </td>
+<td> <p><del><em>bar</em></del></p> </td>
+</tr>
+<tr>
+<td> <pre><code>&lt;del>
+*bar*
+&lt;/del></code></pre> </td>
+<td> <del>
+*bar*
+</del> </td>
+</tr>
+<tr>
+<td> <pre><code>foo
+&lt;del>
+*bar*
+&lt;/del></code></pre> </td>
+<td> <p>foo
+<del>
+<em>bar</em>
+</del></p> </td>
+</tr>
+<tr>
+<td> <pre><code>&lt;del>
+*bar*
+
+&lt;/del></code></pre> </td>
+<td> <del>
+*bar*
+
+<p></del></p> </td>
+</tr>
+<tr>
+<td> <pre><code>&lt;del>
+
+*bar*
+
+&lt;/del></code></pre> </td>
+<td> <del>
+
+<p><em>bar</em></p>
+
+<p></del></p> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">images</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>Image - ![image](mmd.png)</code></pre> </td>
+<td> <p>Image - <img src="mmd.png" alt="image" /></p> </td>
+</tr>
+<tr>
+<td> <pre><code>Image with title - ![image](mmd.png "This is a title")</code></pre> </td>
+<td> <p>Image with title - <img src="mmd.png" alt="image" title="This is a title" /></p> </td>
+</tr>
+<tr>
+<td> <pre><code>Image with attributes - ![image].
+
+[image]: mmd.png "This is a title" height=22px width=60px</code></pre> </td>
+<td> <p>Image with attributes - <img src="mmd.png" alt="image" id="image" title="This is a title" height="22px" width="60px" />.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>Image by itself becomes a figure.
+
+![This is the caption][image]
+
+[image]: mmd.png "This is the title" height=45px width=120px</code></pre> </td>
+<td> <p>Image by itself becomes a figure.</p>
+
+<figure>
+<img src="mmd.png" alt="This is the caption" id="image" title="This is the title" height="45px" width="120px" />
+<figcaption>This is the caption</figcaption>
+</figure> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">linebreaks</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>foo
+bar</code></pre> </td>
+<td> <p>foo
+bar</p> </td>
+</tr>
+<tr>
+<td> <pre><code>foo  
+bar</code></pre> </td>
+<td> <p>foo<br />
+bar</p> </td>
+</tr>
+<tr>
+<td> <pre><code>foo\
+bar</code></pre> </td>
+<td> <p>foo<br />
+bar</p> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">links</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>Link to [MMD](http://fletcherpenney.net/mmd)</code></pre> </td>
+<td> <p>Link to <a href="http://fletcherpenney.net/mmd">MMD</a></p> </td>
+</tr>
+<tr>
+<td> <pre><code>Link to [MultiMarkdown][MMD].
+
+[MMD]: http://fletcherpenney.net/mmd</code></pre> </td>
+<td> <p>Link to <a href="http://fletcherpenney.net/mmd">MultiMarkdown</a>.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>Link to [MMD][].
+
+[MMD]: http://fletcherpenney.net/mmd</code></pre> </td>
+<td> <p>Link to <a href="http://fletcherpenney.net/mmd">MMD</a>.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>Link to [MMD].
+
+[MMD]: http://fletcherpenney.net/mmd</code></pre> </td>
+<td> <p>Link to <a href="http://fletcherpenney.net/mmd">MMD</a>.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>Link to [MMD].
+
+[MMD]: http://fletcherpenney.net/mmd style="border: solid black 1px;"</code></pre> </td>
+<td> <p>Link to <a href="http://fletcherpenney.net/mmd" style="border: solid black 1px;">MMD</a>.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>Link to &lt;http://fletcherpenney.net/mmd></code></pre> </td>
+<td> <p>Link to <a href="http://fletcherpenney.net/mmd">http://fletcherpenney.net/mmd</a></p> </td>
+</tr>
+<tr>
+<td> <pre><code>&lt;foo@example.com></code></pre> </td>
+<td> <p><a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#x3a;&#x66;&#111;&#111;&#64;&#x65;&#x78;&#x61;&#x6d;&#112;&#108;&#101;&#x2e;&#x63;&#x6f;&#109;">&#102;&#x6f;&#111;&#x40;&#101;&#x78;&#x61;&#x6d;&#112;&#x6c;&#x65;&#x2e;&#99;&#111;&#109;</a></p> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">lists</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>* one
+* two
+	* a
+	* b
+* three</code></pre> </td>
+<td> <ul>
+<li>one</li>
+<li>two
+
+<ul>
+<li>a</li>
+<li>b</li>
+</ul></li>
+<li>three</li>
+</ul> </td>
+</tr>
+<tr>
+<td> <pre><code>1. one
+2. two
+	1. a
+	2. b
+3. three</code></pre> </td>
+<td> <ol>
+<li>one</li>
+<li>two
+
+<ol>
+<li>a</li>
+<li>b</li>
+</ol></li>
+<li>three</li>
+</ol> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">math</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>A formula, \\({e}^{i\pi }+1=0\\), inside a paragraph.</code></pre> </td>
+<td> <p>A formula, <span class="math">\({e}^{i\pi }+1=0\)</span>, inside a paragraph.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>A formula, ${e}^{i\pi }+1=0$, inside a paragraph.</code></pre> </td>
+<td> <p>A formula, <span class="math">\({e}^{i\pi }+1=0\)</span>, inside a paragraph.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>\\[{e}^{i\pi }+1=0\\]</code></pre> </td>
+<td> <p><span class="math">\[{e}^{i\pi }+1=0\]</span></p> </td>
+</tr>
+<tr>
+<td> <pre><code>$${e}^{i\pi }+1=0$$</code></pre> </td>
+<td> <p><span class="math">\[{e}^{i\pi }+1=0\]</span></p> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">metadata</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code> Title:	This is a title
+ Author:	Fletcher T. Penney
+ HTML Header: <script>foo</script>
+
+ Content</code></pre> </td>
+<td> <p>Content</p>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">raw source</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>`*foo*`{=html}
+</code></pre> </td>
+<td> <p>*foo*</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>```{=html}
+*foo*
+```</code></pre> </td>
+<td> *foo*
+
+ </td>
+</tr>
+<tr>
+<td> <pre><code>```{=*}
+*foo*
+```</code></pre> </td>
+<td> *foo*
+
+ </td>
+</tr>
+<tr>
+<td> <pre><code>`*foo*`{=latex}
+</code></pre> </td>
+<td> <p></p>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">table of contents</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code># Table of Contents #
+
+{{TOC}}
+
+# Intro #
+
+# Conclusion #
+</code></pre> </td>
+<td> <h1 id="tableofcontents">Table of Contents </h1>
+
+<div class="TOC">
+
+<ul>
+<li><a href="#tableofcontents">Table of Contents </a></li>
+<li><a href="#intro">Intro </a></li>
+<li><a href="#conclusion">Conclusion </a></li>
+</ul>
+</div>
+
+<h1 id="intro">Intro </h1>
+
+<h1 id="conclusion">Conclusion </h1> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">tables</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>| foo | bar |
+| --- | --- |
+| foo | bar |
+| foo bar  ||
+[*caption*][id]</code></pre> </td>
+<td> <table>
+<caption style="caption-side: bottom;" id="id"><em>caption</em></caption>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> foo </th>
+	<th> bar </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td> foo </td>
+	<td> bar </td>
+</tr>
+<tr>
+	<td colspan="2"> foo bar </td>
+</tr>
+</tbody>
+</table>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>| longer header | longer header| longer header |
+| ---: | :---: | :--- |
+| foo | bar | bat |
+
+| foo | bar | bat |
+[*caption*][id]</code></pre> </td>
+<td> <table>
+<caption style="caption-side: bottom;" id="id"><em>caption</em></caption>
+<colgroup>
+<col style="text-align:right;"/>
+<col style="text-align:center;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:right;"> longer header </th>
+	<th style="text-align:center;"> longer header</th>
+	<th style="text-align:left;"> longer header </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:right;"> foo </td>
+	<td style="text-align:center;"> bar </td>
+	<td style="text-align:left;"> bat </td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+	<td style="text-align:right;"> foo </td>
+	<td style="text-align:center;"> bar </td>
+	<td style="text-align:left;"> bat </td>
+</tr>
+</tbody>
+</table>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">transclusion</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>{{filename.md}}</code></pre> </td>
+<td> <p>This is the content of the file <code>filename.md</code>.</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>{{filename.*}}</code></pre> </td>
+<td> <p>This is the content of the file <code>filename.html</code>, since we are creating HTML.</p>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">variables</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code> foo:	bar
+
+ (Variables defined in metadata.)  [%foo]</code></pre> </td>
+<td> <p>(Variables defined in metadata.) bar</p>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">Acknowledgements</h2>
+
+<div class="section" style="padding:10px">
+
+<p>MultiMarkdown v6 Syntax Guide<br />
+by Fletcher T. Penney</p>
+
+<p>Inspired by the Human Markdown Reference by Édouard Brière (including css)</p>
+
+<ul>
+<li><a href="https://github.com/edouard/human-markdown-reference">https://github.com/edouard/human-markdown-reference</a></li>
+</ul>
+
+</div>
+
+
+</body>
+</html>

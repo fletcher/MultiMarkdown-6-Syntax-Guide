@@ -1,0 +1,5 @@
+Image by itself becomes a figure.
+
+![This is the caption][image]
+
+[image]: mmd.png "This is the title" height=45px width=120px

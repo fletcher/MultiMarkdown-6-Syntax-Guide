@@ -1,0 +1,4 @@
+[?Glossary] is a glossary term.
+
+[?Glossary]: The glossary collects information about
+important terms used in your documemnt.

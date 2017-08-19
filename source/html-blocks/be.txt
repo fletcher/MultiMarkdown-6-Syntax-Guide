@@ -1,0 +1,5 @@
+&lt;del>
+
+*bar*
+
+&lt;/del>

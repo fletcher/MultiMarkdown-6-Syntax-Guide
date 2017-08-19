@@ -1,0 +1,41 @@
+#!/bin/bash
+
+rm index.txt
+
+for directory in source/*; do
+
+	title=${directory#source/??-}
+	title=${title#source/?-}
+	title=${title#source/}
+
+	title=${title//-/ }
+
+	echo "<h2 class=\"section-name\">$title</h2>" >> index.txt
+
+	echo >> index.txt
+
+	echo "<div class=\"section\">" >> index.txt
+
+	echo >> index.txt
+
+	cat templates/table-header.txt >> index.txt
+
+	for file in $directory/*.txt; do
+
+		html=${file%txt}
+
+		echo "<tr>" >> index.txt
+		echo "<td> <pre><code>{{$file}}</code></pre> </td>" >> index.txt
+		echo "<td> {{${html}html}} </td>" >> index.txt
+		echo "</tr>" >> index.txt
+	done
+
+	cat templates/table-footer.txt >> index.txt
+
+	echo "</div>" >> index.txt
+	echo  >> index.txt
+	echo  >> index.txt
+
+done
+
+cat templates/footer.txt >> index.txt

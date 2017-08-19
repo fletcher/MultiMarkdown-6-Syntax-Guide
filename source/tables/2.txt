@@ -1,0 +1,6 @@
+| longer header | longer header| longer header |
+| ---: | :---: | :--- |
+| foo | bar | bat |
+
+| foo | bar | bat |
+[*caption*][id]

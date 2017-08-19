@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>MultiMarkdown v6 Syntax Guide</title>
+<meta name = "viewport" content = "width = device-width"/> <meta name = "viewport" content = "initial-scale = 1.0"/> <link rel="stylesheet" type="text/css" media="screen" href="css/markdown-reference.css" /> <script type="text/javascript" src="javascripts/jquery-1.4.2.min.js"></script> <script type="text/javascript" src="javascripts/guide.js"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+
+<h1 id="title">MultiMarkdown v6 Syntax Guide  </h1>
+

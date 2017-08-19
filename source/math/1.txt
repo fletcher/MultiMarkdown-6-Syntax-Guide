@@ -1,0 +1,1 @@
+A formula, \\({e}^{i\pi }+1=0\\), inside a paragraph.

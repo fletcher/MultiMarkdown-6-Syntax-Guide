@@ -1,0 +1,3 @@
+[?(Glossary) The glossary collects information
+about important terms used in your documemnt]
+is a glossary term.

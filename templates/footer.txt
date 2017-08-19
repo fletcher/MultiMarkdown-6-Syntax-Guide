@@ -1,0 +1,18 @@
+<h2 class="section-name">Acknowledgements</h2>
+
+<div class="section" style="padding:10px">
+
+<p>MultiMarkdown v6 Syntax Guide<br />
+by Fletcher T. Penney</p>
+
+<p>Inspired by the Human Markdown Reference by Édouard Brière (including css)</p>
+
+<ul>
+<li><a href="https://github.com/edouard/human-markdown-reference">https://github.com/edouard/human-markdown-reference</a></li>
+</ul>
+
+</div>
+
+
+</body>
+</html>
