@@ -2,9 +2,11 @@
 
 del {
 	background:#fae6e6;
+	-webkit-print-color-adjust: exact;
 }
 ins {
 	background:#ecfce6;
+	-webkit-print-color-adjust: exact;
 }
 span.critic.comment {
 	color:#0000bb;
@@ -14,6 +16,9 @@ span.critic.comment::before {
 }
 span.critic.comment::after {
 	content:" <<}";
+}
+mark {
+	-webkit-print-color-adjust: exact;
 }
 
 /* General */
