@@ -3,8 +3,20 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>MultiMarkdown v6 Syntax Guide</title>
-<meta name = "viewport" content = "width = device-width"/> <meta name = "viewport" content = "initial-scale = 1.0"/> <link rel="stylesheet" type="text/css" media="screen" href="css/markdown-reference.css" /> <script type="text/javascript" src="javascripts/jquery-1.4.2.min.js"></script> <script type="text/javascript" src="javascripts/guide.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<meta name = "viewport" content = "width = device-width"/> <meta name = "viewport" content = "initial-scale = 1.0"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/markdown-reference.css" />
+	<script type="text/javascript" src="javascripts/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="javascripts/guide.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.css" integrity="sha384-b/NoaeRXkMxyKcrDw2KtVtYKkVg3dA0rTRgLoV7W2df3MzeR1eHLTi+l4//4fMwk" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.js" integrity="sha384-ern5NCRqs6nJ/a4Ik0nB9hnKVH5HwV2XRUYdQl09OB/vvd1Lmmqbg1Mh+mYUclXx" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"  onload="renderMathInElement(document.body);"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 
@@ -30,23 +42,28 @@
 <tbody>
 <tr>
 <td> <pre><code>This text is **bold**.</code></pre> </td>
-<td> <p>This text is <strong>bold</strong>.</p> </td>
+<td> <p>This text is <strong>bold</strong>.</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>This text is also __bold__.</code></pre> </td>
-<td> <p>This text is also <strong>bold</strong>.</p> </td>
+<td> <p>This text is also <strong>bold</strong>.</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>This text is *italicized*.</code></pre> </td>
-<td> <p>This text is <em>italicized</em>.</p> </td>
+<td> <p>This text is <em>italicized</em>.</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>This itext is also _italicized_.</code></pre> </td>
-<td> <p>This itext is also <em>italicized</em>.</p> </td>
+<td> <p>This itext is also <em>italicized</em>.</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>`This is some code.`</code></pre> </td>
-<td> <p><code>This is some code.</code></p> </td>
+<td> <p><code>This is some code.</code></p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>	This is a longer
@@ -54,51 +71,63 @@
 	on multiple lines.</code></pre> </td>
 <td> <pre><code>This is a longer
 section of code
-on multiple lines.</code></pre> </td>
+on multiple lines.</code></pre>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>m^2</code></pre> </td>
-<td> <p>m<sup>2</sup></p> </td>
+<td> <p>m<sup>2</sup></p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>x^2,y^</code></pre> </td>
-<td> <p>x<sup>2,y</sup></p> </td>
+<td> <p>x<sup>2,y</sup></p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>x~z</code></pre> </td>
-<td> <p>x<sub>z</sub></p> </td>
+<td> <p>x<sub>z</sub></p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>C~6~H~12~O~6</code></pre> </td>
-<td> <p>C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></p> </td>
+<td> <p>C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>Escaped characters -- \&</code></pre> </td>
-<td> <p>Escaped characters &#8211; &amp;</p> </td>
+<td> <p>Escaped characters &#8211; &amp;</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>"smart quotes"</code></pre> </td>
-<td> <p>&#8220;smart quotes&#8221;</p> </td>
+<td> <p>&#8220;smart quotes&#8221;</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>'smart quotes'</code></pre> </td>
-<td> <p>&#8216;smart quotes&#8217;</p> </td>
+<td> <p>&#8216;smart quotes&#8217;</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>apostrophe's</code></pre> </td>
-<td> <p>apostrophe&#8217;s</p> </td>
+<td> <p>apostrophe&#8217;s</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>en -- dash</code></pre> </td>
-<td> <p>en &#8211; dash</p> </td>
+<td> <p>en &#8211; dash</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>em --- dash</code></pre> </td>
-<td> <p>em &#8212; dash</p> </td>
+<td> <p>em &#8212; dash</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>ellipsis ...</code></pre> </td>
-<td> <p>ellipsis &#8230;</p> </td>
+<td> <p>ellipsis &#8230;</p>
+ </td>
 </tr>
 </tbody>
 </table>
@@ -128,11 +157,13 @@ on multiple lines.</code></pre> </td>
 <td> <pre><code>HTML and HTML
 
 [>HTML]: Hypertext Markup Language</code></pre> </td>
-<td> <p>Hypertext Markup Language (<abbr title="Hypertext Markup Language">HTML</abbr>) and <abbr title="Hypertext Markup Language">HTML</abbr></p> </td>
+<td> <p>Hypertext Markup Language (<abbr title="Hypertext Markup Language">HTML</abbr>) and <abbr title="Hypertext Markup Language">HTML</abbr></p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>[>(HTML) Hypertext Markup Language] and HTML</code></pre> </td>
-<td> <p>Hypertext Markup Language (<abbr title="Hypertext Markup Language">HTML</abbr>) and HTML</p> </td>
+<td> <p>Hypertext Markup Language (<abbr title="Hypertext Markup Language">HTML</abbr>) and HTML</p>
+ </td>
 </tr>
 </tbody>
 </table>
@@ -175,7 +206,8 @@ And one more line.</p>
 <blockquote>
 <p>And a second level blockquote.</p>
 </blockquote>
-</blockquote> </td>
+</blockquote>
+ </td>
 </tr>
 </tbody>
 </table>
@@ -216,7 +248,8 @@ And one more line.</p>
 </li>
 
 </ol>
-</div> </td>
+</div>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>Cite a source.[p. 42][#John Doe. *A Totally Fake Book*. Vanity Press, 2006.]
@@ -233,7 +266,8 @@ And one more line.</p>
 </li>
 
 </ol>
-</div> </td>
+</div>
+ </td>
 </tr>
 </tbody>
 </table>
@@ -261,23 +295,28 @@ And one more line.</p>
 <tbody>
 <tr>
 <td> <pre><code>This {++is ++}a test.</code></pre> </td>
-<td> <p>This <ins>is </ins>a test.</p> </td>
+<td> <p>This <ins>is </ins>a test.</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>This is {--is --}a test.</code></pre> </td>
-<td> <p>This is <del>is </del>a test.</p> </td>
+<td> <p>This is <del>is </del>a test.</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>This {~~isn't~>is~~} a test.</code></pre> </td>
-<td> <p>This <del>isn&#8217;t</del><ins>is</ins> a test.</p> </td>
+<td> <p>This <del>isn&#8217;t</del><ins>is</ins> a test.</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>This is a {==test==}.</code></pre> </td>
-<td> <p>This is a <mark>test</mark>.</p> </td>
+<td> <p>This is a <mark>test</mark>.</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>This is a test.{>>What is it a test of?<<}</code></pre> </td>
-<td> <p>This is a test.<span class="critic comment">What is it a test of?</span></p> </td>
+<td> <p>This is a test.<span class="critic comment">What is it a test of?</span></p>
+ </td>
 </tr>
 </tbody>
 </table>
@@ -311,13 +350,14 @@ And one more line.</p>
 Link to [Intro].
 
 Link to the [end][fin].</code></pre> </td>
-<td> <h1 id="intro">Intro </h1>
+<td> <h1 id="intro">Intro</h1>
 
-<h1 id="fin">Conclusion  </h1>
+<h1 id="fin">Conclusion</h1>
 
 <p>Link to <a href="#intro">Intro</a>.</p>
 
-<p>Link to the <a href="#fin">end</a>.</p> </td>
+<p>Link to the <a href="#fin">end</a>.</p>
+ </td>
 </tr>
 </tbody>
 </table>
@@ -357,6 +397,7 @@ the family Rosaceae.</p>
 
 <p>Also the makers of really great products.</p></dd>
 </dl>
+
  </td>
 </tr>
 </tbody>
@@ -391,7 +432,8 @@ code block.
 </code></pre> </td>
 <td> <pre><code>This is a fenced
 code block.
-</code></pre> </td>
+</code></pre>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>```perl
@@ -405,15 +447,16 @@ $a++;
 }
 ```
 </code></pre> </td>
-<td> <pre><code class="perl">#Demonstrate Syntax Highlighting if you link to highlight.js #
-#http://softwaremaniacs.org/soft/highlight/en/
+<td> <pre><code class="perl"># Demonstrate Syntax Highlighting if you link to highlight.js #
+# http://softwaremaniacs.org/soft/highlight/en/
 print &quot;Hello, world!\n&quot;;
 $a = 0;
 while ($a &lt; 10) {
 print &quot;$a...\n&quot;;
 $a++;
 }
-</code></pre> </td>
+</code></pre>
+ </td>
 </tr>
 </tbody>
 </table>
@@ -454,7 +497,8 @@ $a++;
 </li>
 
 </ol>
-</div> </td>
+</div>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>Text.[^This is an inline footnote.]</code></pre> </td>
@@ -469,7 +513,8 @@ $a++;
 </li>
 
 </ol>
-</div> </td>
+</div>
+ </td>
 </tr>
 </tbody>
 </table>
@@ -512,7 +557,8 @@ important terms used in your documemnt. <a href="#gnref:1" title="return to body
 </li>
 
 </ol>
-</div> </td>
+</div>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>[?(Glossary) The glossary collects information
@@ -531,7 +577,8 @@ about important terms used in your documemnt <a href="#gnref:1" title="return to
 </li>
 
 </ol>
-</div> </td>
+</div>
+ </td>
 </tr>
 </tbody>
 </table>
@@ -560,27 +607,32 @@ about important terms used in your documemnt <a href="#gnref:1" title="return to
 <tr>
 <td> <pre><code># H1 Header
 </code></pre> </td>
-<td> <h1 id="h1header">H1 Header</h1> </td>
+<td> <h1 id="h1header">H1 Header</h1>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>## H2 Header ##
 </code></pre> </td>
-<td> <h2 id="h2header">H2 Header </h2> </td>
+<td> <h2 id="h2header">H2 Header</h2>
+ </td>
 </tr>
 <tr>
 <td> <pre><code># Header with custom id [custom]
 </code></pre> </td>
-<td> <h1 id="custom">Header with custom id </h1> </td>
+<td> <h1 id="custom">Header with custom id</h1>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>H1 Header
 =========</code></pre> </td>
-<td> <h1 id="h1header">H1 Header</h1> </td>
+<td> <h1 id="h1header">H1 Header</h1>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>H2 Header
 ---------</code></pre> </td>
-<td> <h2 id="h2header">H2 Header</h2> </td>
+<td> <h2 id="h2header">H2 Header</h2>
+ </td>
 </tr>
 </tbody>
 </table>
@@ -608,11 +660,13 @@ about important terms used in your documemnt <a href="#gnref:1" title="return to
 <tbody>
 <tr>
 <td> <pre><code>---</code></pre> </td>
-<td> <hr /> </td>
+<td> <hr />
+ </td>
 </tr>
 <tr>
 <td> <pre><code>- - - </code></pre> </td>
-<td> <hr /> </td>
+<td> <hr />
+ </td>
 </tr>
 <tr>
 <td> <pre><code>****</code></pre> </td>
@@ -773,17 +827,20 @@ about important terms used in your documemnt <a href="#gnref:1" title="return to
 <tbody>
 <tr>
 <td> <pre><code>Image - ![image](mmd.png)</code></pre> </td>
-<td> <p>Image - <img src="mmd.png" alt="image" /></p> </td>
+<td> <p>Image - <img src="mmd.png" alt="image" /></p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>Image with title - ![image](mmd.png "This is a title")</code></pre> </td>
-<td> <p>Image with title - <img src="mmd.png" alt="image" title="This is a title" /></p> </td>
+<td> <p>Image with title - <img src="mmd.png" alt="image" title="This is a title" /></p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>Image with attributes - ![image].
 
 [image]: mmd.png "This is a title" height=22px width=60px</code></pre> </td>
-<td> <p>Image with attributes - <img src="mmd.png" alt="image" id="image" title="This is a title" height="22px" width="60px" />.</p> </td>
+<td> <p>Image with attributes - <img src="mmd.png" alt="image" id="image" title="This is a title" height="22" width="60" />.</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>Image by itself becomes a figure.
@@ -794,9 +851,10 @@ about important terms used in your documemnt <a href="#gnref:1" title="return to
 <td> <p>Image by itself becomes a figure.</p>
 
 <figure>
-<img src="mmd.png" alt="This is the caption" id="image" title="This is the title" height="45px" width="120px" />
+<img src="mmd.png" alt="This is the caption" id="image" title="This is the title" height="45" width="120" />
 <figcaption>This is the caption</figcaption>
-</figure> </td>
+</figure>
+ </td>
 </tr>
 </tbody>
 </table>
@@ -826,19 +884,22 @@ about important terms used in your documemnt <a href="#gnref:1" title="return to
 <td> <pre><code>foo
 bar</code></pre> </td>
 <td> <p>foo
-bar</p> </td>
+bar</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>foo  
 bar</code></pre> </td>
 <td> <p>foo<br />
-bar</p> </td>
+bar</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>foo\
 bar</code></pre> </td>
 <td> <p>foo<br />
-bar</p> </td>
+bar</p>
+ </td>
 </tr>
 </tbody>
 </table>
@@ -939,7 +1000,8 @@ bar</p> </td>
 <li>b</li>
 </ul></li>
 <li>three</li>
-</ul> </td>
+</ul>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>1. one
@@ -956,7 +1018,8 @@ bar</p> </td>
 <li>b</li>
 </ol></li>
 <li>three</li>
-</ol> </td>
+</ol>
+ </td>
 </tr>
 </tbody>
 </table>
@@ -984,19 +1047,23 @@ bar</p> </td>
 <tbody>
 <tr>
 <td> <pre><code>A formula, \\({e}^{i\pi }+1=0\\), inside a paragraph.</code></pre> </td>
-<td> <p>A formula, <span class="math">\({e}^{i\pi }+1=0\)</span>, inside a paragraph.</p> </td>
+<td> <p>A formula, <span class="math">\({e}^{i\pi }+1=0\)</span>, inside a paragraph.</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>A formula, ${e}^{i\pi }+1=0$, inside a paragraph.</code></pre> </td>
-<td> <p>A formula, <span class="math">\({e}^{i\pi }+1=0\)</span>, inside a paragraph.</p> </td>
+<td> <p>A formula, <span class="math">\({e}^{i\pi }+1=0\)</span>, inside a paragraph.</p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>\\[{e}^{i\pi }+1=0\\]</code></pre> </td>
-<td> <p><span class="math">\[{e}^{i\pi }+1=0\]</span></p> </td>
+<td> <p><span class="math">\[{e}^{i\pi }+1=0\]</span></p>
+ </td>
 </tr>
 <tr>
 <td> <pre><code>$${e}^{i\pi }+1=0$$</code></pre> </td>
-<td> <p><span class="math">\[{e}^{i\pi }+1=0\]</span></p> </td>
+<td> <p><span class="math">\[{e}^{i\pi }+1=0\]</span></p>
+ </td>
 </tr>
 </tbody>
 </table>
@@ -1116,7 +1183,7 @@ bar</p> </td>
 
 # Conclusion #
 </code></pre> </td>
-<td> <h1 id="tableofcontents">Table of Contents </h1>
+<td> <h1 id="tableofcontents">Table of Contents</h1>
 
 <div class="TOC">
 
@@ -1127,9 +1194,10 @@ bar</p> </td>
 </ul>
 </div>
 
-<h1 id="intro">Intro </h1>
+<h1 id="intro">Intro</h1>
 
-<h1 id="conclusion">Conclusion </h1> </td>
+<h1 id="conclusion">Conclusion</h1>
+ </td>
 </tr>
 </tbody>
 </table>
