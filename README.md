@@ -30,7 +30,7 @@ advanced features.
 `make` will process any changed txt files to create new html files.  It then
 runs the make_index script to compile the final HTML.
 
-`make` clean will erase the HTML files, forcing them to be rebuilt with
+`make clean` will erase the HTML files, forcing them to be rebuilt with
 multimarkdown.
 
 **NOTE**: If you you do this, be sure to use MMD version 6.2.0 or higher.

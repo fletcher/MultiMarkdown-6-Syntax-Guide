@@ -6,7 +6,7 @@ srcfiles := $(wildcard $(SOURCE_DIR)/*/*.txt)
 htmlfiles := $(patsubst %.txt, %.html, $(srcfiles))
 
 # Don't clean certain files
-cleanfiles := $(filter-out $(wildcard $(SOURCE_DIR)/html-blocks/*.html) $(wildcard $(SOURCE_DIR)/metadata/*.html) $(wildcard $(SOURCE_DIR)/links/*.html) $(wildcard $(SOURCE_DIR)/variables/*.html), $(wildcard $(SOURCE_DIR)/*/*.html))
+cleanfiles := $(filter-out $(wildcard $(SOURCE_DIR)/html-blocks/*.html) $(wildcard $(SOURCE_DIR)/metadata/*.html) $(wildcard $(SOURCE_DIR)/links/*.html) $(wildcard $(SOURCE_DIR)/variables/*.html)  $(wildcard $(SOURCE_DIR)/transclusion/*.html), $(wildcard $(SOURCE_DIR)/*/*.html))
 
 .PHONY : release
 release: index.txt
