@@ -1,3 +1,2 @@
-	This is a longer
-	section of code
-	on multiple lines.
+	This is a longer section of code
+    on multiple lines.
